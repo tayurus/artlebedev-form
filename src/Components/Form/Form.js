@@ -1,4 +1,5 @@
 import React from "react";
+import "./Form.css";
 
 export class Form extends React.Component {
     constructor(props) {
