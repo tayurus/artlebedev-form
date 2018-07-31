@@ -1,5 +1,7 @@
 import React from "react";
 import "./Form.css";
+import { TabsNavigation } from "./../TabsNavigation/TabsNavigation";
+import { Button } from "./../Button/Button";
 
 export class Form extends React.Component {
     constructor(props) {
@@ -97,16 +99,25 @@ export class Form extends React.Component {
         return (
             <div className="Form">
                 <div className="Form__tabs">
-                    <div className="Form__tab" hidden={this.state.currentTab !== 0}>
+                    <div
+                        className="Form__tab"
+                        hidden={this.state.currentTab !== 0}
+                    >
                         <h3 className="Form__tab-title">
                             Выбраны {this.getCheckedTonesCount()}{" "}
                             {this.getToneEnding(this.getCheckedTonesCount())}
                         </h3>
                     </div>
-                    <div className="Form__tab" hidden={this.state.currentTab !== 1}>
+                    <div
+                        className="Form__tab"
+                        hidden={this.state.currentTab !== 1}
+                    >
                         <h3 className="Form__tab-title">Комментарий</h3>
                     </div>
-                    <div className="Form__tab" hidden={this.state.currentTab !== 2}>
+                    <div
+                        className="Form__tab"
+                        hidden={this.state.currentTab !== 2}
+                    >
                         <h3 className="Form__tab-title">Контактное лицо</h3>
                     </div>
                 </div>
