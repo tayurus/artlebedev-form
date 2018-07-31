@@ -95,23 +95,23 @@ export class Form extends React.Component {
 
     render() {
         return (
-            <div class="Form">
-                <div class="Form__tabs">
-                    <div class="Form__tab" hidden={this.state.currentTab !== 0}>
-                        <h3 class="Form__tab-title">
+            <div className="Form">
+                <div className="Form__tabs">
+                    <div className="Form__tab" hidden={this.state.currentTab !== 0}>
+                        <h3 className="Form__tab-title">
                             Выбраны {this.getCheckedTonesCount()}{" "}
                             {this.getToneEnding(this.getCheckedTonesCount())}
                         </h3>
                     </div>
-                    <div class="Form__tab" hidden={this.state.currentTab !== 1}>
-                        <h3 class="Form__tab-title">Комментарий</h3>
+                    <div className="Form__tab" hidden={this.state.currentTab !== 1}>
+                        <h3 className="Form__tab-title">Комментарий</h3>
                     </div>
-                    <div class="Form__tab" hidden={this.state.currentTab !== 2}>
-                        <h3 class="Form__tab-title">Контактное лицо</h3>
+                    <div className="Form__tab" hidden={this.state.currentTab !== 2}>
+                        <h3 className="Form__tab-title">Контактное лицо</h3>
                     </div>
                 </div>
 
-                <div class="Form__controls">
+                <div className="Form__controls">
                     <TabsNavigation
                         tabsName={this.state.tabsName}
                         changeCurrentTab={this.changeCurrentTab}
