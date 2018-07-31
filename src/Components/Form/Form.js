@@ -126,6 +126,7 @@ export class Form extends React.Component {
                     <TabsNavigation
                         tabsNames={this.state.tabsNames}
                         changeCurrentTab={this.changeCurrentTab}
+                        currentTab={this.state.currentTab}
                     />
 
                     <Button label="Отправить" type="send" />
