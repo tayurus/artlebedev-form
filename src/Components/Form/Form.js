@@ -30,7 +30,7 @@ export class Form extends React.Component {
                 }
             ],
             currentTab: 0,
-            tabsName: ["Состав заказа", "Комментарий", "Контактное лицо"]
+            tabsNames: ["Состав заказа", "Комментарий", "Контактное лицо"]
         };
 
         /*********BINDING METHODS*********/
@@ -124,7 +124,7 @@ export class Form extends React.Component {
 
                 <div className="Form__controls">
                     <TabsNavigation
-                        tabsName={this.state.tabsName}
+                        tabsNames={this.state.tabsNames}
                         changeCurrentTab={this.changeCurrentTab}
                     />
 
