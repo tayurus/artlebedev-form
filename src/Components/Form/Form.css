@@ -1,0 +1,21 @@
+.Form{
+    max-width: 1851px;
+    display: flex;
+    font-family: Roboto;
+}
+
+.Form__tabs{
+    padding-right: 78px;
+    border-right: 3px dashed #e37458;
+}
+
+.Form__tab{
+    max-width: 1454px;
+}
+
+.Form__tab-title{
+    font-size: 48px;
+    margin: 0px;
+    padding-bottom: 24px;
+    border-bottom: 7px solid #f1b16b;
+}
