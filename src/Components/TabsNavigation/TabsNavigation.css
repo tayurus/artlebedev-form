@@ -2,11 +2,13 @@
     max-width: 325px;
     padding: 0px;
     margin: 0px;
+    list-style: none;
 }
 
 .TabsNavigation__item{
     font-size: 36px;
-    border: 2px dotted #000000;
+    border-bottom: 2px dotted #000000;
+    display: inline-block;
     cursor: pointer;
 }
 
