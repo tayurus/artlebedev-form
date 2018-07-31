@@ -1,0 +1,35 @@
+.TabsNavigation{
+    max-width: 325px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.TabsNavigation__item{
+    font-size: 36px;
+    border: 2px dotted #000000;
+    cursor: pointer;
+}
+
+.TabsNavigation__item:not(:first-child):not(:last-child){
+    margin: 47px 0px 41px 0px;
+}
+
+.TabsNavigation__item:hover{
+    color: #dc7300;
+}
+
+.TabsNavigation__item_active{
+    color: #dc7300;
+    position: relative;
+    border: none;
+}
+
+.TabsNavigation__item_active::before{
+    position: absolute;
+    content: "";
+    left: -30px;
+    top: 0px;
+    width: 25px;
+    height: 16px;
+    background: url("img/TabsNavigation__item_active.png") no-repeat center / contain;
+}
