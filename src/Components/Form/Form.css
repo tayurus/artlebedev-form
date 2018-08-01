@@ -7,10 +7,12 @@
 .Form__tabs{
     padding-right: 78px;
     border-right: 3px dashed #e37458;
+    max-width: 1454px;
+    flex-grow: 1;
 }
 
 .Form__tab{
-    max-width: 1454px;
+
 }
 
 .Form__tab-title{

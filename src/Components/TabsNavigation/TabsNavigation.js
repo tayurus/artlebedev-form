@@ -13,6 +13,8 @@ export const TabsNavigation = props => {
                                 ? "TabsNavigation__item_active"
                                 : "")
                         }
+                        key={index}
+                        onClick={() => props.changeCurrentTab(index)}
                     >
                         {item}
                     </li>
