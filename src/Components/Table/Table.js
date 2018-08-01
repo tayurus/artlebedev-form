@@ -30,7 +30,7 @@ export const Table = props => {
                                 {index === 0 ? props.colorName : ""}
                             </td>
                             <td>
-                                <Checkbox />
+                                <Checkbox handleCheck={props.updateTone} index={index} checked={item.checked}/>
                             </td>
                             <td>
                                 <select />

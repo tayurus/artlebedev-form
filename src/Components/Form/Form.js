@@ -82,6 +82,7 @@ export class Form extends React.Component {
         this.setState({ color: updatedColor });
     }
 
+
     /*******HELPERS FUNCTIONS*********/
     getCheckedTonesCount() {
         return this.state.color.reduce(
@@ -121,6 +122,7 @@ export class Form extends React.Component {
                             colorName={this.state.colorName}
                             color={this.state.color}
                             removeTone={this.removeTone}
+                            updateTone={this.updateTone}
                         />
 
                     <Button type="add" helpersClasses="d-block mx-auto mt-5" label="+ Добавить оттенок" onClickHandler={() => this.addTone()}/>

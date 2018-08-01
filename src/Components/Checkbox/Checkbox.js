@@ -6,8 +6,19 @@ let maxCheckBoxId = 0;
 export const Checkbox = props => {
     return (
         <div className="Checkbox">
-            <input type="checkbox" id={"checkbox" + maxCheckBoxId} hidden/>
-            <label class="Checkbox__label" for={"checkbox" + maxCheckBoxId++}></label>
+            <input
+                type="checkbox"
+                defaultChecked={props.checked}
+                onChange={() =>
+                    props.handleCheck(props.index, "checked", !props.checked)
+                }
+                id={"checkbox" + maxCheckBoxId}
+                hidden
+            />
+            <label
+                className="Checkbox__label"
+                htmlFor={"checkbox" + maxCheckBoxId++}
+            />
         </div>
-    )
-}
+    );
+};
