@@ -9,3 +9,7 @@ body {
 .mb-4 {
     margin-bottom: 4rem !important;
 }
+
+.brdr-b-2{
+    border-bottom: 2px solid #00000015;
+}

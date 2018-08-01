@@ -2,35 +2,42 @@ import React from "react";
 import "./Form.css";
 import { TabsNavigation } from "./../TabsNavigation/TabsNavigation";
 import { Button } from "./../Button/Button";
+import { Table } from "./../Table/Table";
 
 export class Form extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            colorName: "Синий",
             color: [
                 {
                     checked: true,
                     value: "skyey",
-                    volume: 1
+                    volume: 1,
+                    packageType: "банка"
                 },
                 {
                     checked: true,
                     value: "blue",
-                    volume: 2
+                    volume: 2,
+                    packageType: "банка"
                 },
                 {
                     checked: true,
                     value: "deep",
-                    volume: 1
+                    volume: 1,
+                    packageType: "банка"
                 },
                 {
                     checked: true,
                     value: "royal",
-                    volume: 3
+                    volume: 3,
+                    packageType: "банка"
                 }
             ],
             currentTab: 0,
-            tabsNames: ["Состав заказа", "Комментарий", "Контактное лицо"]
+            tabsNames: ["Состав заказа", "Комментарий", "Контактное лицо"],
+            tonesInSelect: ["Небесный", "Голубой", "Глубокий", "Королевский"]
         };
 
         /*********BINDING METHODS*********/
@@ -53,7 +60,8 @@ export class Form extends React.Component {
         let defaultTone = {
             checked: true,
             value: "deep",
-            volume: 1
+            volume: 1,
+            packageType: "банка"
         };
         this.setState({ color: this.state.color.concat(defaultTone) });
     }
@@ -108,7 +116,7 @@ export class Form extends React.Component {
                             {this.getToneEnding(this.getCheckedTonesCount())}
                         </h3>
 
-
+                        <Table colorName={this.state.colorName} color={this.state.color}/>
                     </div>
                     <div
                         className="Form__tab"
