@@ -1,7 +1,8 @@
 import React from "react";
 import "./Table.css";
 
-import { Button } from './../Button/Button';
+import { Button } from "./../Button/Button";
+import { Checkbox } from "./../Checkbox/Checkbox";
 
 export const Table = props => {
     return (
@@ -19,9 +20,17 @@ export const Table = props => {
                 {props.color.map((item, index) => {
                     return (
                         <tr>
-                            <td className={index === 0 ? "brdr-b-2 fz-2-2rem d-inline-block" : ""}>{index === 0 ? props.colorName : ""}</td>
+                            <td
+                                className={
+                                    index === 0
+                                        ? "brdr-b-2 fz-2-2rem d-inline-block"
+                                        : ""
+                                }
+                            >
+                                {index === 0 ? props.colorName : ""}
+                            </td>
                             <td>
-                                <input type="checkbox" />
+                                <Checkbox />
                             </td>
                             <td>
                                 <select />
@@ -31,7 +40,12 @@ export const Table = props => {
                             </td>
                             <td>{item.packageType}</td>
                             <td className="text-right">
-                                <Button type="remove" onClickHandler={() => props.removeTone(index)}/>
+                                <Button
+                                    type="remove"
+                                    onClickHandler={() =>
+                                        props.removeTone(index)
+                                    }
+                                />
                             </td>
                         </tr>
                     );
