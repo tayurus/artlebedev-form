@@ -11,3 +11,10 @@
     color: #fff;
     font-size: 2.6rem;
 }
+
+.Button_remove{
+    padding: 0px;
+    width: 24px;
+    height: 24px;
+    background: url('img/Button_remove.png') no-repeat center / contain;
+}
