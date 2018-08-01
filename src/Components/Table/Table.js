@@ -19,7 +19,7 @@ export const Table = props => {
                 {props.color.map((item, index) => {
                     return (
                         <tr>
-                            <td className={index === 0 ? "brdr-b-2" : ""}>{index === 0 ? props.colorName : ""}</td>
+                            <td className={index === 0 ? "brdr-b-2 fz-2-2rem d-inline-block" : ""}>{index === 0 ? props.colorName : ""}</td>
                             <td>
                                 <input type="checkbox" />
                             </td>
@@ -27,7 +27,7 @@ export const Table = props => {
                                 <select />
                             </td>
                             <td>
-                                <input type="number" />
+                                <input type="number" /> л
                             </td>
                             <td>{item.packageType}</td>
                             <td>
