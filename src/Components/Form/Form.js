@@ -107,6 +107,8 @@ export class Form extends React.Component {
                             Выбраны {this.getCheckedTonesCount()}{" "}
                             {this.getToneEnding(this.getCheckedTonesCount())}
                         </h3>
+
+
                     </div>
                     <div
                         className="Form__tab"
