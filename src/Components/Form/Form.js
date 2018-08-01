@@ -116,7 +116,7 @@ export class Form extends React.Component {
                             {this.getToneEnding(this.getCheckedTonesCount())}
                         </h3>
 
-                        <Table colorName={this.state.colorName} color={this.state.color} removeTone={this.removeTone}/>
+                        <Table helpersClasses="mt-4" colorName={this.state.colorName} color={this.state.color} removeTone={this.removeTone}/>
                     </div>
                     <div
                         className="Form__tab"

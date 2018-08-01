@@ -5,9 +5,9 @@ import { Button } from './../Button/Button';
 
 export const Table = props => {
     return (
-        <table className="Table">
+        <table className={"Table " + props.helpersClasses}>
             <tbody>
-                <tr>
+                <tr className="text-left">
                     <th>Цвет</th>
                     <th />
                     <th>Оттенок</th>
@@ -30,7 +30,7 @@ export const Table = props => {
                                 <input type="number" /> л
                             </td>
                             <td>{item.packageType}</td>
-                            <td>
+                            <td className="text-right">
                                 <Button type="remove" onClickHandler={() => props.removeTone(index)}/>
                             </td>
                         </tr>

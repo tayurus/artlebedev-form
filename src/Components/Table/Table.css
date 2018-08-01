@@ -3,6 +3,7 @@
 }
 
 .Table th{
+    padding-bottom: 4rem;
     opacity: 0.4;
     font-size: 1.5rem;
     font-weight: 400;
@@ -10,4 +11,8 @@
 
 .Table tr{
     font-size: 2rem;
+}
+
+.Table tr:not(:first-child):not(:last-child) td:not(:first-child){
+    padding-bottom: 5rem;
 }
