@@ -3,7 +3,7 @@ import "./TabsNavigation.css";
 
 export const TabsNavigation = props => {
     return (
-        <ul className="TabsNavigation">
+        <ul className={"TabsNavigation " + props.helpersClasses}>
             {props.tabsNames.map((item, index) => {
                 return (
                     <li

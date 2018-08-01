@@ -7,5 +7,5 @@ body {
 /* HELPERS CLASSES */
 
 .mb-4 {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem !important;
 }
