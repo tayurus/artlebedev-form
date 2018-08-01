@@ -96,9 +96,9 @@ export class Form extends React.Component {
         // 1 21 31 41 101 оттенок
         // 2 3 4 22 23 34 оттенка
         // 5 6 7 8 9 10 11 12 13 25 35 100 111  оттенков
-        if (number % 10 === 1 && number <= 101) return "оттенок";
+        if (number % 10 === 1 && number <= 101 && number != 11) return "оттенок";
 
-        if (number % 10 >= 2 && number % 10 <= 4) return "оттенка";
+        if (number % 10 >= 2 && number % 10 <= 4 && !(number >= 12 && number <= 14)) return "оттенка";
 
         return "оттенков";
     }
