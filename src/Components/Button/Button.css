@@ -24,3 +24,12 @@
     height: 24px;
     background: url('img/Button_remove.png') no-repeat center / contain;
 }
+
+.Button_add{
+    color: #e37458;
+    font-size: 2rem;
+    border-bottom: 2px dotted #e37458;
+    padding: 0px;
+    background: transparent;
+    border-radius: 0px;
+}

@@ -25,9 +25,22 @@ body {
     display: inline-block !important;
 }
 
+.d-block{
+    display: block !important;
+}
+
 .text-left{
     text-align: left !important;
 }
 .text-right{
     text-align: right !important;
+}
+
+.mx-auto{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.mt-5{
+    margin-top: 5rem !important;
 }
