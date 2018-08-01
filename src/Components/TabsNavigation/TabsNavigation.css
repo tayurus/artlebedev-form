@@ -3,17 +3,19 @@
     padding: 0px;
     margin: 0px;
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .TabsNavigation__item{
-    font-size: 36px;
+    font-size: 2.2rem;
     border-bottom: 2px dotted #000000;
     display: inline-block;
     cursor: pointer;
 }
 
 .TabsNavigation__item:not(:first-child):not(:last-child){
-    margin: 47px 0px 41px 0px;
+    margin: 3rem 0px 2.6rem 0px;
 }
 
 .TabsNavigation__item:hover{
