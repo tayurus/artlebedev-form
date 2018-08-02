@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    transition: 0.3s;
 }
 
 body {
@@ -68,7 +69,7 @@ body {
 }
 
 /* MEDIA HELPERS CLASSES*/
-@media (min-width:1200px),(max-device-width:1200px) {
+@media (min-width:1200px),(min-device-width:1200px) {
     .w-xl-25{
         width: 25% !important
     }
