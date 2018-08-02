@@ -26,10 +26,19 @@
 }
 
 .Button_add{
+    position: relative;
     color: #e37458;
     font-size: 2rem;
     border-bottom: 2px dotted #e37458;
     padding: 0px;
     background: transparent;
     border-radius: 0px;
+}
+
+.Button_add::before{
+    position: absolute;
+    content: "+";
+    color: #e37458;
+    font-size: 2rem;
+    border-bottom:2px solid #fff;
 }
