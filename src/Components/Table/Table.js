@@ -9,6 +9,7 @@ import { Input } from "./../Input/Input";
 export const Table = props => {
     console.log("tonesInSelect = ", props.tonesInSelect);
     return (
+        <div className="Table-container">
         <table className={"Table " + props.helpersClasses}>
             <tbody>
                 <tr className="text-left">
@@ -55,5 +56,7 @@ export const Table = props => {
                 })}
             </tbody>
         </table>
+        </div>
+
     );
 };

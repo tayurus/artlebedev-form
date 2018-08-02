@@ -1,6 +1,11 @@
+.Table-container{
+    overflow-x: auto;
+}
+
 .Table{
     width: 100%;
-    padding: 0rem 0rem 0rem 3rem;
+    min-width: 500px;
+    padding: 0rem 0rem 1rem 3rem;
 }
 
 .Table th{
@@ -16,4 +21,32 @@
 
 .Table tr:not(:first-child):not(:last-child) td:not(:first-child){
     padding-bottom: 2.7rem;
+}
+
+
+/* CUSTOM SCROLLBAR */
+
+/* width */
+
+.Table-container::-webkit-scrollbar {
+    width: 1px;
+    height: 3px;
+}
+
+/* Track */
+
+.Table-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+
+.Table-container::-webkit-scrollbar-thumb {
+    background-color: #2b80ff;
+}
+
+/* Handle on hover */
+
+.Table-container::-webkit-scrollbar-thumb:hover {
+    background-color: #2b50ff;
 }
