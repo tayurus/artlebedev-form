@@ -19,6 +19,10 @@
     font-size: 2rem;
 }
 
+.Table tr td{
+    white-space: nowrap;
+}
+
 .Table tr:not(:first-child):not(:last-child) td:not(:first-child) {
     padding-bottom: 2.7rem;
 }
