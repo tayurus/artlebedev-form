@@ -1,4 +1,4 @@
-.TabsNavigation{
+.TabsNavigation {
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -6,28 +6,28 @@
     flex-direction: column;
 }
 
-.TabsNavigation__item{
+.TabsNavigation__item {
     font-size: 2.2rem;
     border-bottom: 2px dotted #000000;
     display: inline-block;
     cursor: pointer;
 }
 
-.TabsNavigation__item:not(:first-child):not(:last-child){
+.TabsNavigation__item:not(:first-child):not(:last-child) {
     margin: 3rem 0px 2.6rem 0px;
 }
 
-.TabsNavigation__item:hover{
+.TabsNavigation__item:hover {
     color: #dc7300;
 }
 
-.TabsNavigation__item_active{
+.TabsNavigation__item_active {
     color: #dc7300;
     position: relative;
     border: none;
 }
 
-.TabsNavigation__item_active::before{
+.TabsNavigation__item_active::before {
     position: absolute;
     content: "";
     left: -2rem;

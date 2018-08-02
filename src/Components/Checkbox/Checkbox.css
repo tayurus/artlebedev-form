@@ -1,4 +1,4 @@
-.Checkbox__label{
+.Checkbox__label {
     display: block;
     width: 2.5rem;
     height: 2.5rem;
@@ -9,7 +9,7 @@
     margin: 0px 1rem;
 }
 
-.Checkbox > input[type='checkbox']:checked + .Checkbox__label::after{
+.Checkbox>input[type='checkbox']:checked+.Checkbox__label::after {
     position: absolute;
     content: '';
     width: 1.5rem;

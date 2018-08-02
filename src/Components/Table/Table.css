@@ -1,28 +1,27 @@
-.Table-container{
+.Table-container {
     overflow-x: auto;
 }
 
-.Table{
+.Table {
     width: 100%;
     min-width: 500px;
     padding: 0rem 0rem 1rem 3rem;
 }
 
-.Table th{
+.Table th {
     padding-bottom: 3.4rem;
     opacity: 0.4;
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-.Table tr{
+.Table tr {
     font-size: 2rem;
 }
 
-.Table tr:not(:first-child):not(:last-child) td:not(:first-child){
+.Table tr:not(:first-child):not(:last-child) td:not(:first-child) {
     padding-bottom: 2.7rem;
 }
-
 
 /* CUSTOM SCROLLBAR */
 

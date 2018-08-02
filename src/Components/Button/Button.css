@@ -1,4 +1,4 @@
-.Button{
+.Button {
     border-radius: 8px;
     padding: 2rem 3rem;
     font-size: 2rem;
@@ -7,7 +7,7 @@
     transition: 0.5s;
 }
 
-.Button:hover{
+.Button:hover {
     transform: scale(1.05);
 }
 
@@ -18,14 +18,14 @@
     font-size: 2.6rem;
 }
 
-.Button_remove{
+.Button_remove {
     padding: 0px;
     width: 1.5rem;
     height: 1.5rem;
     background: url('img/Button_remove.png') no-repeat center / contain;
 }
 
-.Button_add{
+.Button_add {
     position: relative;
     color: #e37458;
     font-size: 2rem;
@@ -35,10 +35,10 @@
     border-radius: 0px;
 }
 
-.Button_add::before{
+.Button_add::before {
     position: absolute;
     content: "+";
     color: #e37458;
     font-size: 2rem;
-    border-bottom:2px solid #fff;
+    border-bottom: 2px solid #fff;
 }

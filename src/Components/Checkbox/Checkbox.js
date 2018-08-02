@@ -9,16 +9,11 @@ export const Checkbox = props => {
             <input
                 type="checkbox"
                 defaultChecked={props.checked}
-                onChange={() =>
-                    props.handleCheck(props.index, "checked", !props.checked)
-                }
+                onChange={() => props.handleCheck(props.index, "checked", !props.checked)}
                 id={"checkbox" + maxCheckBoxId}
                 hidden
             />
-            <label
-                className="Checkbox__label"
-                htmlFor={"checkbox" + maxCheckBoxId++}
-            />
+            <label className="Checkbox__label" htmlFor={"checkbox" + maxCheckBoxId++} />
         </div>
     );
 };

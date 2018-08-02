@@ -82,13 +82,9 @@ export class Form extends React.Component {
         this.setState({ color: updatedColor });
     }
 
-
     /*******HELPERS FUNCTIONS*********/
     getCheckedTonesCount() {
-        return this.state.color.reduce(
-            (acc, item) => (item.checked ? acc + 1 : acc),
-            0
-        );
+        return this.state.color.reduce((acc, item) => (item.checked ? acc + 1 : acc), 0);
     }
 
     //возвращает верную форму множественного числа слова "оттенок"
@@ -108,13 +104,9 @@ export class Form extends React.Component {
         return (
             <div className="Form">
                 <div className="Form__tabs">
-                    <div
-                        className="Form__tab"
-                        hidden={this.state.currentTab !== 0}
-                    >
+                    <div className="Form__tab" hidden={this.state.currentTab !== 0}>
                         <h3 className="Form__tab-title">
-                            Выбраны {this.getCheckedTonesCount()}{" "}
-                            {this.getToneEnding(this.getCheckedTonesCount())}
+                            Выбраны {this.getCheckedTonesCount()} {this.getToneEnding(this.getCheckedTonesCount())}
                         </h3>
 
                         <Table
@@ -126,19 +118,12 @@ export class Form extends React.Component {
                             tonesInSelect={this.state.tonesInSelect}
                         />
 
-                    <Button type="add" helpersClasses="d-block mx-auto mt-5" label="+ Добавить оттенок" onClickHandler={() => this.addTone()}/>
-
+                        <Button type="add" helpersClasses="d-block mx-auto mt-5" label="+ Добавить оттенок" onClickHandler={() => this.addTone()} />
                     </div>
-                    <div
-                        className="Form__tab"
-                        hidden={this.state.currentTab !== 1}
-                    >
+                    <div className="Form__tab" hidden={this.state.currentTab !== 1}>
                         <h3 className="Form__tab-title">Комментарий</h3>
                     </div>
-                    <div
-                        className="Form__tab"
-                        hidden={this.state.currentTab !== 2}
-                    >
+                    <div className="Form__tab" hidden={this.state.currentTab !== 2}>
                         <h3 className="Form__tab-title">Контактное лицо</h3>
                     </div>
                 </div>
