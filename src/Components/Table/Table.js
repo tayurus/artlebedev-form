@@ -3,8 +3,10 @@ import "./Table.css";
 
 import { Button } from "./../Button/Button";
 import { Checkbox } from "./../Checkbox/Checkbox";
+import { Select } from "./../Select/Select";
 
 export const Table = props => {
+    console.log("tonesInSelect = ", props.tonesInSelect);
     return (
         <table className={"Table " + props.helpersClasses}>
             <tbody>
@@ -33,7 +35,7 @@ export const Table = props => {
                                 <Checkbox handleCheck={props.updateTone} index={index} checked={item.checked}/>
                             </td>
                             <td>
-                                <select />
+                                <Select options={props.tonesInSelect}/>
                             </td>
                             <td>
                                 <input type="number" /> л

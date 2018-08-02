@@ -123,6 +123,7 @@ export class Form extends React.Component {
                             color={this.state.color}
                             removeTone={this.removeTone}
                             updateTone={this.updateTone}
+                            tonesInSelect={this.state.tonesInSelect}
                         />
 
                     <Button type="add" helpersClasses="d-block mx-auto mt-5" label="+ Добавить оттенок" onClickHandler={() => this.addTone()}/>

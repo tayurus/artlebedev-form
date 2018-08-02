@@ -1,5 +1,6 @@
-.Select, .Select option{
-    padding: 0.9rem 1.4rem 1.4rem 1.5rem;
+.Select{
+    width: 25rem;
+    padding: 0.5rem 1.4rem 0.5rem 1.5rem;
     border-radius: 8px;
     border: 4px solid #d7d7d7;
     font-size: 32px;
