@@ -151,7 +151,7 @@ export class Form extends React.Component {
                         helpersClasses="mb-4"
                     />
 
-                    <Button label="Отправить" type="send" />
+                    <Button helpersClasses="d-block mx-auto" label="Отправить" type="send" />
                 </div>
             </div>
         );

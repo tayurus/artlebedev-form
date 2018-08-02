@@ -1,28 +1,38 @@
-.Form{
+.Form {
     max-width: 1851px;
     display: flex;
     font-family: Roboto;
     padding: 1rem 1rem 1rem 0rem;
 }
 
-.Form__tabs{
+.Form__tabs {
     padding-right: 5rem;
     border-right: 3px dashed #e37458;
     max-width: 1454px;
     flex-grow: 1;
 }
 
-.Form__tab{
-
-}
-
-.Form__tab-title{
+.Form__tab-title {
     font-size: 3rem;
     margin: 0px;
     padding: 2rem;
     border-bottom: 7px solid #f1b16b;
 }
 
-.Form__controls{
+.Form__controls {
     padding: 3rem 0rem 3rem 5rem;
+}
+
+@media (max-width:767px), (max-device-width:767px) {
+    .Form {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .Form__tabs {
+        border-right: 0px;
+        padding-right: 0rem;
+    }
+    .Form__controls {
+        padding: 3rem 2rem 3rem 2rem;
+    }
 }
