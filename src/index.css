@@ -8,6 +8,23 @@ body {
     font-family: sans-serif;
 }
 
+/* ADAPTIVE */
+@media (max-width:1570px),(max-device-width:1570px) {
+    html{
+        font-size: 13px;
+    }
+}
+@media (max-width:1280px),(max-device-width:1280px) {
+    html{
+        font-size: 11px;
+    }
+}
+@media (max-width:992px),(max-device-width:992px) {
+    html{
+        font-size: 8px;
+    }
+}
+
 /* HELPERS CLASSES */
 
 .mb-4 {
