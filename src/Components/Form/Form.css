@@ -2,6 +2,7 @@
     max-width: 1851px;
     display: flex;
     font-family: Roboto;
+    padding: 1rem 1rem 1rem 0rem;
 }
 
 .Form__tabs{
@@ -18,7 +19,7 @@
 .Form__tab-title{
     font-size: 3rem;
     margin: 0px;
-    padding-bottom: 1.5rem;
+    padding: 2rem;
     border-bottom: 7px solid #f1b16b;
 }
 

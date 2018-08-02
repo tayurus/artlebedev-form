@@ -118,7 +118,7 @@ export class Form extends React.Component {
                         </h3>
 
                         <Table
-                            helpersClasses="mt-4"
+                            helpersClasses="mt-3"
                             colorName={this.state.colorName}
                             color={this.state.color}
                             removeTone={this.removeTone}
