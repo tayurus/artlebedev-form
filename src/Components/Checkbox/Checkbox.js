@@ -8,7 +8,7 @@ export const Checkbox = props => {
         <div className="Checkbox">
             <input
                 type="checkbox"
-                defaultChecked={props.checked}
+                checked={props.checked}
                 onChange={() => props.handleCheck(props.index, "checked", !props.checked)}
                 id={"checkbox" + maxCheckBoxId}
                 hidden

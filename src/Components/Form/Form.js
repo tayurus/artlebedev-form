@@ -12,25 +12,25 @@ export class Form extends React.Component {
             color: [
                 {
                     checked: true,
-                    value: "skyey",
+                    value: 0,
                     volume: 1,
                     packageType: "банка"
                 },
                 {
                     checked: true,
-                    value: "blue",
+                    value: 1,
                     volume: 2,
                     packageType: "банка"
                 },
                 {
                     checked: true,
-                    value: "deep",
+                    value: 2,
                     volume: 1,
                     packageType: "банка"
                 },
                 {
                     checked: true,
-                    value: "royal",
+                    value: 3,
                     volume: 3,
                     packageType: "банка"
                 }
@@ -67,10 +67,10 @@ export class Form extends React.Component {
     }
 
     removeTone(index) {
+        let updatedColor = this.state.color;
+        updatedColor.splice(index,1)
         this.setState({
-            color: this.state.color.filter(function(item, i) {
-                return i !== index;
-            })
+            color: updatedColor
         });
     }
 

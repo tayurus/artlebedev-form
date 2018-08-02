@@ -7,7 +7,6 @@ import { Select } from "./../Select/Select";
 import { Input } from "./../Input/Input";
 
 export const Table = props => {
-    console.log("tonesInSelect = ", props.tonesInSelect);
     return (
         <div className="Table-container">
             <table className={"Table " + props.helpersClasses}>
@@ -24,12 +23,30 @@ export const Table = props => {
                     {props.color.map((item, index) => {
                         return (
                             <tr>
-                                <td className={index === 0 ? "brdr-b-2 fz-2-2rem d-inline-block" : ""}>{index === 0 ? props.colorName : ""}</td>
-                                <td>
-                                    <Checkbox handleCheck={props.updateTone} index={index} checked={item.checked} />
+                                <td
+                                    className={
+                                        index === 0
+                                            ? "brdr-b-2 fz-2-2rem d-inline-block"
+                                            : ""
+                                    }
+                                >
+                                    {index === 0 ? props.colorName : ""}
                                 </td>
                                 <td>
-                                    <Select options={props.tonesInSelect} />
+                                    <Checkbox
+                                        handleCheck={props.updateTone}
+                                        index={index}
+                                        checked={item.checked}
+                                    />
+                                </td>
+                                <td>
+                                    <Select
+                                        index={index}
+                                        valueName="value"
+                                        handleChange={props.updateTone}
+                                        options={props.tonesInSelect}
+                                        selectedValue={item.value}
+                                    />
                                 </td>
                                 <td>
                                     <Input
@@ -44,7 +61,12 @@ export const Table = props => {
                                 </td>
                                 <td>{item.packageType}</td>
                                 <td className="text-right">
-                                    <Button type="remove" onClickHandler={() => props.removeTone(index)} />
+                                    <Button
+                                        type="remove"
+                                        onClickHandler={() =>
+                                            props.removeTone(index)
+                                        }
+                                    />
                                 </td>
                             </tr>
                         );
