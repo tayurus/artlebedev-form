@@ -4,6 +4,7 @@ import "./Table.css";
 import { Button } from "./../Button/Button";
 import { Checkbox } from "./../Checkbox/Checkbox";
 import { Select } from "./../Select/Select";
+import { Input } from "./../Input/Input";
 
 export const Table = props => {
     console.log("tonesInSelect = ", props.tonesInSelect);
@@ -11,7 +12,7 @@ export const Table = props => {
         <table className={"Table " + props.helpersClasses}>
             <tbody>
                 <tr className="text-left">
-                    <th>Цвет</th>
+                    <th className="w-xl-25">Цвет</th>
                     <th />
                     <th>Оттенок</th>
                     <th>Объем</th>
@@ -38,7 +39,7 @@ export const Table = props => {
                                 <Select options={props.tonesInSelect}/>
                             </td>
                             <td>
-                                <input type="number" /> л
+                                <Input toneIndex={index} type="number" size="small" valueName="volume" updateValue={props.updateTone} value={item.volume} /> л
                             </td>
                             <td>{item.packageType}</td>
                             <td className="text-right">

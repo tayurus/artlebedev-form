@@ -2,5 +2,19 @@
     border-radius: 8px;
     border: 4px solid #d7d7d7;
     padding: 0.5rem 1.4rem 0.5rem 1.5rem;
-    font-size: 2em;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.Input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+.Input::-webkit-outer-spin-button,
+.Input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.Input_small{
+    width: 7rem;
 }

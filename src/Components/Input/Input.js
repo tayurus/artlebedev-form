@@ -1,13 +1,6 @@
 import React from "react";
 import "./Input.css";
 
-validate(e, type){
-    if (type === "number"){
-        let reg = /^[0-9]+$/;
-        console.log(e.target.value);
-    }
-}
-
 export const Input = props => {
-    return <input className="Input" type={props.type} onChange={(e) => validate(e, props.type)} />;
+    return <input className={"Input " + (typeof props.size === "undefined" ? "" : "Input_" + props.size)} type={props.type} value={props.value} onChange={(e) => props.updateValue(props.toneIndex, props.valueName, e.target.value)} />;
 };
