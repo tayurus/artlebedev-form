@@ -1,0 +1,8 @@
+.Select, .Select option{
+    padding: 0.9rem 1.4rem 1.4rem 1.5rem;
+    border-radius: 8px;
+    border: 4px solid #d7d7d7;
+    font-size: 32px;
+    appearance: none;
+    background: url('img/Select-arrow.png') no-repeat 96% center / 19px 10px;
+}
